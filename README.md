@@ -1,9 +1,9 @@
-#Backend API
+# Backend API
 
-##Cognito, Dynamo, S3 components
+## Cognito, Dynamo, S3 components
 
-###Basic Frontend
+### Basic Frontend
 
-###Deploy all via route 53
+### Deploy all via route 53
 
-#Component 2: Rekognition
+# Component 2: Rekognition
