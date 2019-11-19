@@ -1,0 +1,22 @@
+eos app client id: 5m47novqffgp2hlv3pnutjlt0p
+eos id - pool id: us-west-2:d019d9f8-506d-4d0b-bf47-52a1f006ea99
+
+facebook 'eos' app id:
+	2520736958042289
+secret:
+	e8d5061e7b1e920d9e0e78b920e99e33
+
+google 'web client 1' app id:
+	1045025586320-li36120rss2mds4ni1dugkbgmo9rpdt1.apps.googleusercontent.com
+
+secret:
+	sIjgGsHIMigdbQxBzOD4nSvX
+
+Oauth endoint
+	https://eos42b0bc0b-42b0bc0b-eosenv.auth.us-west-2.amazoncognito.com/
+
+privacy policy:
+	https://www.freeprivacypolicy.com/privacy/view/73399abeadf13962feab0fe69e6f7dd0
+
+tutorial site:
+	https://dev.to/dabit3/the-complete-guide-to-user-authentication-with-the-amplify-framework-2inh

@@ -1,0 +1,21 @@
+{
+    "eosenv": {
+        "awscloudformation": {
+            "AuthRoleName": "eos-eosenv-20191114200654-authRole",
+            "UnauthRoleArn": "arn:aws:iam::499047212924:role/eos-eosenv-20191114200654-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::499047212924:role/eos-eosenv-20191114200654-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "eos-eosenv-20191114200654-deployment",
+            "UnauthRoleName": "eos-eosenv-20191114200654-unauthRole",
+            "StackName": "eos-eosenv-20191114200654",
+            "StackId": "arn:aws:cloudformation:us-west-2:499047212924:stack/eos-eosenv-20191114200654/5c1849b0-075d-11ea-a642-026b5a8136ba"
+        },
+        "categories": {
+            "auth": {
+                "eos42b0bc0b": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"2520736958042289\",\"client_secret\":\"e8d5061e7b1e920d9e0e78b920e99e33\"},{\"ProviderName\":\"Google\",\"client_id\":\"1045025586320-li36120rss2mds4ni1dugkbgmo9rpdt1.apps.googleusercontent.com\",\"client_secret\":\"sIjgGsHIMigdbQxBzOD4nSvX\"}]"
+                }
+            }
+        }
+    }
+}
