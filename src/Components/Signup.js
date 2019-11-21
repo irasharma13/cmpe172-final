@@ -1,9 +1,18 @@
 import React, { useState, useReducer } from 'react'
-
 import { Auth } from 'aws-amplify'
 
+/*
+
+got this from an online source, its convoluted a bit
+crammed into one file for some reason
+
+
+
+
+*/
+
 const initialFormState = {
-  username: '', password: '', email: '', confirmationCode: ''
+   email: '', password: '', confirmationCode: ''
 }
 
 function reducer(state, action) {
@@ -13,14 +22,14 @@ function reducer(state, action) {
         ...state, [action.e.target.name]: action.e.target.value
       }
     default:
-      return state
+      return state;
   }
 }
 
-async function signUp({ username, password, email }, updateFormType) {
+async function signUp({ email, password }, updateFormType) {
   try {
     await Auth.signUp({
-      username, password, attributes: { email }
+      email, password
     })
     console.log('sign up success!')
     updateFormType('confirmSignUp')
@@ -29,9 +38,9 @@ async function signUp({ username, password, email }, updateFormType) {
   }
 }
 
-async function confirmSignUp({ username, confirmationCode }, updateFormType) {
+async function confirmSignUp({ email, confirmationCode }, updateFormType) {
   try {
-    await Auth.confirmSignUp(username, confirmationCode)
+    await Auth.confirmSignUp(email, confirmationCode)
     console.log('confirm sign up success!')
     updateFormType('signIn')
   } catch (err) {
@@ -39,9 +48,9 @@ async function confirmSignUp({ username, confirmationCode }, updateFormType) {
   }
 }
 
-async function signIn({ username, password }) {
+async function signIn({ email, password }) {
   try {
-    await Auth.signIn(username, password)
+    await Auth.signIn(email, password)
     console.log('sign in success!')
   } catch (err) {
     console.log('error signing up..', err)
@@ -113,10 +122,10 @@ function SignUp(props) {
   return (
     <div style={styles.container}>
       <input
-        name='username'
+        name='email'
         onChange={e => {e.persist();props.updateFormState(e)}}
         style={styles.input}
-        placeholder='username'
+        placeholder='email'
       />
       <input
         type='password'
@@ -124,12 +133,6 @@ function SignUp(props) {
         onChange={e => {e.persist();props.updateFormState(e)}}
         style={styles.input}
         placeholder='password'
-      />
-      <input
-        name='email'
-        onChange={e => {e.persist();props.updateFormState(e)}}
-        style={styles.input}
-        placeholder='email'
       />
       <button onClick={props.signUp} style={styles.button}>
         Sign Up
@@ -142,10 +145,10 @@ function SignIn(props) {
   return (
     <div style={styles.container}>
       <input
-        name='username'
+        name='email'
         onChange={e => {e.persist();props.updateFormState(e)}}
         style={styles.input}
-        placeholder='username'
+        placeholder='email'
       />
       <input
         type='password'

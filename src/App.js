@@ -1,11 +1,11 @@
 import React from 'react';
-import Signup from "./Components/Signup"
-import { Auth } from  'aws-amplify'
+import Login from "./Components/Login"
+
 
 function App() {
   return (
     <div className="App">
-      <Signup />
+      <Login />
     </div>
   );
 }
