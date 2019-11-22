@@ -6,8 +6,11 @@ CMPE 172 - Enterprise Software
 Professor Sanjay Garje - https://www.linkedin.com/in/sanjaygarje/
 
 Mohamed Albgal             - https://www.linkedin.com/in/mohamed-albgal-954b3860/
+
 Muhammad Soroya            - https://www.linkedin.com/in/shahnawaz-soroya-9457a663/
+
 Ira Sharma                 - https://www.linkedin.com/in/ira-sharma/
+
 Shahbaz Singh Mansahia     - https://www.linkedin.com/in/shahbaz-mansahia/
 
 Project introduction
