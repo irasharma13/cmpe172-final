@@ -54,16 +54,18 @@ export default function NewNote(props) {
   return (
     <div className="NewNote">
       <form onSubmit={handleSubmit}>
+        
+        <FormGroup controlId="file">
+          <ControlLabel>Upload the photo here</ControlLabel>
+          <FormControl onChange={handleFileChange} type="file" />
+        </FormGroup>
+
         <FormGroup controlId="content">
           <FormControl
             value={content}
             componentClass="textarea"
             onChange={e => setContent(e.target.value)}
           />
-        </FormGroup>
-        <FormGroup controlId="file">
-          <ControlLabel>Attachment</ControlLabel>
-          <FormControl onChange={handleFileChange} type="file" />
         </FormGroup>
         <LoaderButton
           block

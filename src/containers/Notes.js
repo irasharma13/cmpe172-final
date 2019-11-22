@@ -116,22 +116,16 @@ export default function Notes(props) {
     <div className="Notes">
       {note && (
         <form onSubmit={handleSubmit}>
-          <FormGroup controlId="content">
-            <FormControl
-              value={content}
-              componentClass="textarea"
-              onChange={e => setContent(e.target.value)}
-            />
-          </FormGroup>
+          
           {note.attachment && (
             <FormGroup>
-              <ControlLabel>Attachment</ControlLabel>
+              <ControlLabel>Picture</ControlLabel>
               <FormControl.Static>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href={note.attachmentURL}
-// Making Image show
+// Making Image
                 >
                   
                   <img src="note.attachmentURL" alt="picture1"></img>
@@ -139,7 +133,17 @@ export default function Notes(props) {
                 </a>
               </FormControl.Static>
             </FormGroup>
+
+            
           )}
+
+<FormGroup controlId="content">
+            <FormControl
+              value={content}
+              componentClass="textarea"
+              onChange={e => setContent(e.target.value)}
+            />
+          </FormGroup>
           <FormGroup controlId="file">
             {!note.attachment && <ControlLabel>Attachment</ControlLabel>}
             <FormControl onChange={handleFileChange} type="file" />
