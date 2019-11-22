@@ -46,7 +46,7 @@ export default function NewNote(props) {
   }
 
   function createNote(note) {
-    return API.post("notes", "/notes", {
+    return API.post("notes", "/uploads", {
       body: note
     });
   }

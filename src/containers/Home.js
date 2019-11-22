@@ -28,16 +28,20 @@ export default function Home(props) {
   }, [props.isAuthenticated]);
 
   function loadNotes() {
-    return API.get("notes", "/notes");
+    return API.get("notes", "/uploads");
   }
 
   function renderNotesList(notes) {
+    console.log(notes)
     return [{}].concat(notes).map((note, i) =>
+   
       i !== 0 ? (
-        <LinkContainer key={note.noteId} to={`/notes/${note.noteId}`}>
-          <ListGroupItem header={note.content.trim().split("\n")[0]}>
-            {"Created: " + new Date(note.createdAt).toLocaleString()}
-          </ListGroupItem>
+     
+        <LinkContainer key={note.noteId} to={`/notes/${note.imageId}`}>
+          {/* <ListGroupItem header={note.creationTime.trim().split("\n")[0]}></ListGroupItem> */}
+       
+            {"Created: " + new Date(note.creationTime).toLocaleString()}
+         
         </LinkContainer>
       ) : (
         <LinkContainer key="new" to="/notes/new">
