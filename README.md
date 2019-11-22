@@ -23,6 +23,9 @@ The core features will include Account creation, Image upload, Image search, and
 
 
 Sample Demo Screenshots
+
+
+
 Pre-requisites set up
 
 
