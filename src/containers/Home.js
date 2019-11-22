@@ -43,7 +43,7 @@ export default function Home(props) {
         <LinkContainer key="new" to="/notes/new">
           <ListGroupItem>
             <h4>
-              <b>{"\uFF0B"}</b> Create a new note
+              <b>{"\uFF0B"}</b> Add a new photo
             </h4>
           </ListGroupItem>
         </LinkContainer>
@@ -56,7 +56,7 @@ export default function Home(props) {
       <div className="lander">
         <h1>Photo AWganizer</h1>
         <p>A simple Photo Organizer</p>
-        <img src="../cmpe172-frontend\src\images\dog.png/dog.png" alt="Dog"></img>
+        <img src="https://i.ibb.co/WFbk5mf/dog.png" alt="Dogs"></img>
       </div>
     );
   }

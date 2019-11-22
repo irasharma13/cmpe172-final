@@ -131,7 +131,10 @@ export default function Notes(props) {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={note.attachmentURL}
+// Making Image show
                 >
+                  
+                  <img src="note.attachmentURL" alt="picture1"></img>
                   {formatFilename(note.attachment)}
                 </a>
               </FormControl.Static>
