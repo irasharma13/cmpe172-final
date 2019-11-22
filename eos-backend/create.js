@@ -21,6 +21,6 @@ export async function main(event, context, callback) {
 		await ddbLib.call("put", tableParams);
 		return success(tableParams.Item);
 	}catch (e){
-		console.log(e);
 		return failure({status:false});
 	}
+}

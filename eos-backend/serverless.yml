@@ -75,5 +75,13 @@ functions:
           method: delete
           cors: true
           authorizer: aws_iam
+  label:
+    handler: label.main
+    events:
+      - http:
+          path: uploads/label
+          method: post
+          cors: true
+          authorizer: aws_iam
 resources:
   - ${file(res/api-gateway-errors.yml)}

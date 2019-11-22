@@ -1,0 +1,8 @@
+{
+  "body": "{\"bucket\":\"eos-x3\",\"key\":\"private/us-west-2:bb835f49-aa8e-4878-bee3-469991055a05/1574400545128-CLI Amplify.png\"}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}
