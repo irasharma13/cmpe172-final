@@ -56,6 +56,7 @@ export default function Home(props) {
       <div className="lander">
         <h1>Photo AWganizer</h1>
         <p>A simple Photo Organizer</p>
+        <img src="../cmpe172-frontend\src\images\dog.png/dog.png" alt="Dog"></img>
       </div>
     );
   }
