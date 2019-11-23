@@ -22,11 +22,27 @@ Feature list
 The core features will include Account creation, Image upload, Image search, and Image delete. Image search should be utilizing Amazons Recognition capabilities. Tags of objects inside the image will be created by AWS Rekognition and the tags will be used to search associated images.
 
 
-Sample Demo Screenshots
+# Scalable, Extensible Image Recognition Web Application on AWS
+
+The aim of this project is to generate labels and other metadata for user uploaded images. The set of metadata belonging to a specific user can then be easily queried against, from various clients*.
+
+This application is a serverless application running on a suite of *AWS* services as well as the *Serverless Framework*
+
+The project is hosted on **[mohamed-albgal.com](mohamed-albgal.com)**
+
+The backend API is hosted independently on **[api.mohamed-albgal.com](mohamed-albgal.com)**
+
+The entire project stack can be recreated using *AWS CloudFormation*'s design console. By visiting the URL below and  replacing ``` REGION``` with the *AWS* region to which you would like to create this stack, the *AWS* services can be provisioned with ease.
+
+> ```
+https://console.aws.amazon.com/cloudformation/designer/home?region=us-east-1&templateURL=https://bucket818.s3-us-west-1.amazonaws.com/eos_template.template
+```
+
+---
+
+*The certain application features may not be functional at this time
 
 
-
-Pre-requisites set up
 
 
 
